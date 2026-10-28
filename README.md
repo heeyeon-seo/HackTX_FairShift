@@ -1,5 +1,25 @@
 # FairShift
 
+## About This Repository
+
+FairShift was developed as a collaborative team project during HackTX 2026. It is an AI-powered platform designed to help hourly workers better understand their pay, workplace rights, and employment-related documents.
+
+This repository is my personal portfolio copy of the original team project.
+
+### My Contributions — Heeyeon Seo
+
+- **AI Integration:** Integrated Meta's Muse chatbot into the platform to provide AI-powered assistance with pay-related questions and workplace rights.
+- **Document Processing & Privacy:** Implemented privacy-focused document processing using OCR to extract text and numerical information from uploaded pay stubs, redact sensitive personal information, and send redacted data to Muse for structured analysis.
+- **Multilingual Support:** Implemented multilingual AI responses to make the platform accessible to workers from different language backgrounds.
+- **Voice Interaction:** Developed speech-to-text functionality using the browser's Web Speech API and text-to-speech features to improve accessibility.
+- **Frontend Development & UI/UX:** Designed the user interface using Figma and contributed to frontend development, focusing on intuitive navigation, accessibility, and user experience.
+
+### Original Team Repository
+
+[FairShift — HackTX 2026](https://github.com/dakshaswam/FairShift)
+
+---
+
 FairShift helps hourly workers understand their pay. A worker signs in with Google, uploads a photo or PDF of a pay stub, and gets every line explained in their own language (18 languages). The assistant chat answers pay questions, checks hours and overtime, drafts a wage claim summary, finds free legal aid and worker centers nearby, and compares local job pay. FairShift does not decide whether wage laws were broken or what wages are legally owed.
 
 - **Frontend:** React 19, Vite and Tailwind CSS v4 (`src/`).
@@ -162,6 +182,7 @@ result = extract_paystub(
     "samples/sample_paystub.pdf",
     review=approve_in_terminal,
 )
+
 print(result.model_dump_json(indent=2))
 ```
 
